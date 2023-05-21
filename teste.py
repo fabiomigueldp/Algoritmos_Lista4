@@ -1,7 +1,7 @@
 l = []
 while True:
-    n = int(input("Digite um númeroi (0 sai): "))
-    if n == 0:
+    n = input("Digite um númeroi (0 sai): ")
+    if n == None:
         break
     l.append(n)
 x = 0

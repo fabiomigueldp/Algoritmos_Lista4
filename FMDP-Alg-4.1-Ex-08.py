@@ -20,3 +20,27 @@ while x < len(l):
     x += 1
 
 print(f"A média da soma dos 10 elementos é: {soma/10:.2f}")
+
+# Encontra o maior número
+
+x = 0
+maior = l[0]
+
+while x < len(l):
+    if l[x] > maior:
+        maior = l[x]
+    x += 1
+
+print(f"O maior número inserido é {maior}.")
+
+# Encontra o menor número
+
+x = 0
+menor = l[0]
+
+while x < len(l):
+    if l[x] < menor:
+        menor = l[x]
+    x += 1
+
+print(f"O menor número inserido é {menor}.")

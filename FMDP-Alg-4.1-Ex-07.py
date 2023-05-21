@@ -5,6 +5,8 @@
 
 x = 100
 
+# Repetição while
+
 while x >= 0:
     print(x)
     x -= 5
