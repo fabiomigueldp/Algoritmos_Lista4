@@ -5,7 +5,11 @@ número inteiro positivo fornecido pelo usuário.'''
 
 n = int(input("Insira um número inteiro positivo: "))
 
+# Define soma
+
 soma = 0
+
+# Repetição for
 
 for e in range(1, n + 1):
     soma += 1 / e

@@ -5,19 +5,12 @@ número inteiro positivo fornecido pelo usuário.'''
 
 n = int(input("Insira um número inteiro positivo: "))
 
-# Define soma
-
-soma = 0
-
-# Repetição while
-
-for e in range(1, n + 1):
-    soma += 1/(2*e-1)
-    print(soma)
-
+# Define variáveis
 
 e = 1
 soma = 0
+
+# Repetição while
 
 while True:
     soma += 1/(2*e-1)

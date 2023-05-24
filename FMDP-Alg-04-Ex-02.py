@@ -7,7 +7,7 @@ desconto e o novo valor com desconto aplicado para produtos com os seguintes val
 R$ 4.95, R$ 9.95, R$ 14.95, R$ 19.95 e R$ 24.95. Certifique-se que todos os valores são
 mostrados com duas casas decimais.'''
 
-# Header
+# Cabeçalho
 
 print("Preço\t\tDesconto\tPreço c/ desconto")
 
@@ -29,3 +29,26 @@ for e in l:
 
     # Imprime os resultados formatados
     print(f"R$ {n: .2f}\t{q}\t\tR$ {c: .2f}")
+
+
+'''
+# Cabeçalho
+print("Preço\t\tDesconto\tPreço c/ desconto")
+
+# Lista de preços
+l = [4.95, 9.95, 14.95, 19.95, 24.95]
+
+# Itera sobre os elementos da lista
+for e in l:
+    # Preço original
+    preco_original = e
+
+    # Porcentagem de desconto
+    desconto = "60%"
+
+    # Cálculo do preço com desconto
+    preco_com_desconto = e * 0.4
+
+    # Imprime os resultados formatados
+    print(f"R$ {preco_original:.2f}\t{desconto}\t\tR$ {preco_com_desconto:.2f}")
+    '''

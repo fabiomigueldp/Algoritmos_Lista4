@@ -37,7 +37,7 @@ while True:
     # Solicitar ao usuário as coordenadas x e y do próximo ponto
     x = input("Insira a coordenada x de um ponto (<enter> para sair): ")
     
-    # Verificar se o usuário deseja sair do programa
+    # Verificar se o usuário deseja encerrar a repetição
     if x == "":
         break
     
