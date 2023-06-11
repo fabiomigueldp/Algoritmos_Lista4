@@ -6,3 +6,18 @@ mesmos números. A saída esperada do programa deve ser semelhante ao mostrado a
 Ao desenvolver seu programa, talvez você ache conveniente exibir um valor com print sem
 mover para a próxima linha. Isso pode ser feito adicionando-se end="" como último parâmetro
 da função print (Exemplo: print(x, end=“”)).'''
+
+# Tabela de multiplicação
+
+# Imprime a linha de cabeçalho
+print("  ", end="")
+for i in range(1, 11):
+    print(f"{i:4}", end="")
+print()
+
+# Imprime as linhas da tabela
+for i in range(1, 11):
+    print(f"{i:2}", end="")
+    for j in range(1, 11):
+        print(f"{i * j:4}", end="")
+    print()

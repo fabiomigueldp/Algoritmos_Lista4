@@ -19,6 +19,19 @@ número inteiro que representa o caracter Unicode c. A função chr(n) retorna o
 Unicode representado pelo número inteiro n.'''
 
 def cifra_de_cesar(mensagem, deslocamento):
+    """
+    Aplica a cifra de César em uma mensagem, deslocando as letras do alfabeto
+    de acordo com o valor fornecido.
+
+    Args:
+        mensagem (str): A mensagem a ser cifrada.
+        deslocamento (int): O valor de deslocamento das letras.
+
+    Returns:
+        str: A mensagem cifrada.
+
+    """
+
     resultado = ""
     for letra in mensagem:
         if letra.isalpha():
@@ -32,11 +45,15 @@ def cifra_de_cesar(mensagem, deslocamento):
             resultado += letra
     return resultado
 
+
+# Entrada de dados
 mensagem = input("Digite a mensagem: ")
 deslocamento = int(input("Digite a distância de deslocamento: "))
 
+# Cifrar mensagem
 mensagem_codificada = cifra_de_cesar(mensagem, deslocamento)
 print("Mensagem codificada:", mensagem_codificada)
 
+# Decifrar mensagem
 mensagem_decodificada = cifra_de_cesar(mensagem_codificada, -deslocamento)
 print("Mensagem decodificada:", mensagem_decodificada)

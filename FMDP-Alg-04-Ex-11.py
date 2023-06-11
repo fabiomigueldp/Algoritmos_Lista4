@@ -10,6 +10,7 @@ mensagem = mensagem.lower()  # Converte a mensagem para minúsculas.
 mensagem = "".join(mensagem.split())  # Remove os espaços em branco da mensagem.
 mensagemx = ""
 
+# Remove caracteres diferentes de letras da mensagem.
 for letra in mensagem:
     if letra.isalpha():
         mensagemx += letra

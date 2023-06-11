@@ -19,7 +19,7 @@ x = float(input("Digite um número: "))
 raiz = x / 2
 
 # Loop para refinar a raiz
-while abs(raiz * raiz - x) > 0.0000000001:
+while abs(x - (raiz * raiz)) > 0.00001:
     raiz = (raiz + x / raiz) / 2
     print(raiz)
 

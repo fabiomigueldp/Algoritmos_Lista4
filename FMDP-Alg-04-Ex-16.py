@@ -23,3 +23,35 @@ A O A A A (5 sorteios)
 O O A O O A O A O A A A (12 sorteios)
 O A O O O (5 sorteios)
 Na média, foram necessários 7.9 sorteios.'''
+
+import random
+
+def cara_ou_coroa():
+    if random.random() < 0.5:
+        return "A"
+    else:
+        return "O"
+    
+x = 0
+y = 100000
+tentativas_totais = 0
+s = ""
+
+while x < y:
+    while len(s) < 3:
+        s += cara_ou_coroa()
+    s_total = s
+    tentativas = 3
+    while s != "AAA" and s != "OOO":
+        novo_sorteio = cara_ou_coroa()
+        s += novo_sorteio
+        s_total += novo_sorteio
+        s = s[1:]
+        tentativas += 1
+    s_total = ' '.join(list(s_total))
+    tentativas_totais += tentativas
+    print(f"{s_total} ({tentativas} sorteios.)")
+    s = ""
+    x += 1
+
+print(f"Na média, foram necessários {tentativas_totais/y} sorteios.")
